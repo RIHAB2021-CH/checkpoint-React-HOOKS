@@ -18,7 +18,7 @@ function MovieCard({Movie}) {
                 </Card.Text >
 
                 <Card.Text >
-                <Link to ={`/movieDesc/:${Movie.id}`}>
+                <Link to ={`/movieDesc/${Movie.title}`}>
                     <Button variant="warning" style={{marginButtom:"2rem"}}>View Details</Button>
                     </Link>
                     </Card.Text>

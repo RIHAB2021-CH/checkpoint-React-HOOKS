@@ -2,14 +2,14 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {Movies} from "./data";
-import { Route, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Home from "./Components/Home";
 import MovieDesc from "./Components/MovieDesc"
 
 function App() {
    
     return (
-        <Switch>
+        <div>
              <Route
           exact
           path="/"
@@ -19,12 +19,12 @@ function App() {
         />
          <Route
           exact
-          path="/movieDesc/:id"
+          path="/movieDesc/:title"
           render={(defaultProps) => (
             <MovieDesc {...defaultProps} Movies={Movies} />
           )}
         />
-       </Switch>
+      </div>
     )
 }
 
